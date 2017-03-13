@@ -11,6 +11,7 @@ session_start();
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="сарачи, етър, палдъм, хамут, юзда, юлар, ръчна изработка, занаятчийска камара, кожар">
 <meta name="description" content="Ръчна изработка на сарашки и кожени изделия.">
+<meta name="author" content="Martin Inkyov">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/javascript.js"></script>
 <script src="js/zoomPictures.js"></script>
@@ -26,8 +27,9 @@ session_start();
 <link type="text/css" rel="Stylesheet" href="basic-jquery-slider-master/bjqs.css" />
 </head>
 <body>
+<div class="wrapper">
 <div id="navbar"> 
-    <p id='logo'>Сарашка работилница "Етър"</p>
+  <p id='logo'>Сарашка работилница "Етър"</p>
   <div id="addition">
     <ul>
       <li><a href="index.php">Начало</a></li>

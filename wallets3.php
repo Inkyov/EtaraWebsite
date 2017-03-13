@@ -94,15 +94,13 @@ echo "</div>";
         }
 
 }
+echo "<ul class='pagination'>";
+  echo "<li><a href='wallets2.php'>«</a></li>";
+  echo "<li><a href='wallets.php'>1</a></li>";
+  echo "<li><a href='wallets2.php'>2</a></li>";
+  echo "<li><a class='active' href='wallets3.php'>3</a></li>";
+  echo "<li><a href='wallets4.php'>4</a></li>";
+  echo "<li><a href='wallets4.php'>»</a></li>";
+echo "</ul>";
+include "layout_foot.html";
 ?>
-<ul class="pagination" style="text-align:left !important;">
-  <li><a href="wallets2.php">«</a></li>
-  <li><a href="wallets.php">1</a></li>
-  <li><a href="wallets2.php">2</a></li>
-  <li><a class="active" href="wallets3.php">3</a></li>
-  <li><a href="wallets4.php">4</a></li>
-  <li><a href="wallets4.php">»</a></li>
-</ul>
-</div>
-</body>
-</html>

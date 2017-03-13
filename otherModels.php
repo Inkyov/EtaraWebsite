@@ -101,7 +101,5 @@ echo "<div class='pswp' tabindex='-1' role='dialog' aria-hidden='true'>";
 echo "</div>";
         }
 }
+include "layout_foot.html";
 ?>
-</div>
-</body>
-</html>

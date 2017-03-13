@@ -2,8 +2,7 @@
 include 'layout_head.php';
 // parameters
 $action = isset($_GET['action']) ? $_GET['action'] : "";
-$name = isset($_GET['name']) ? $_GET['name'] : "";
- 
+
 if($action=='removed'){
     echo "<div class='alert alert-info'>";
         echo "Артикулът беше успешно изтрит!";
@@ -19,7 +18,7 @@ if($action=='removed'){
     // remove the last comma
     $ids = rtrim($ids, ',');
     //start table
-    echo "<table class='cartItems'>";
+    echo "<table>";
      
     // our table heading
     echo "<tr>";
@@ -65,7 +64,7 @@ $stmt->execute();
             $Subtotal = intval($_SESSION['cart_items'][$ProductID]['quantity']) * intval($Price);
             echo "<td class='right'>" . number_format($Subtotal, 2, '.', ',') . "лв." . "</td>";
             echo "<td>";
-            echo "<a href='remove_from_cart.php?id={$ProductID}&name={$Name}'>";
+            echo "<a href='remove_from_cart.php?id={$ProductID}'>";
                         echo "<div id='center'>Изтрий</div>";
             echo "</a>";
             echo "</td>";
@@ -94,7 +93,5 @@ $stmt->execute();
 }else{
     echo "<p id='emptyCart'>Вашата кошница е празна!</p>";
 }
+include "layout_foot.html";
 ?>
-</div>
-</body>
-</html>

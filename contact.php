@@ -84,6 +84,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
   <div id="cell_3map"> 
    <div id="googleMap"></div>
   </div>
-</div>
-</body>
-</html>
+<?php
+include "layout_foot.html";
+?>

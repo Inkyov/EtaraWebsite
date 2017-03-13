@@ -100,7 +100,5 @@ echo "</div>";
         }
 
 }
+include "layout_foot.html";
 ?>
-</div>
-</body>
-</html>

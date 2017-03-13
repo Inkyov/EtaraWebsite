@@ -3,7 +3,14 @@ $(document).ready(function(){
     $('.add-to-cart').click(function(){
         var id = $(this).closest('div').find('.product-id').text();
         var quantity = $(this).closest('div').find('input').val();
-        window.location.href = "add_to_cart.php?id=" + id + "&quantity=" + quantity;
+        $.ajax({
+            type: "POST",
+            url: "add_to_cart.php",
+            data: {id: id, quantity: quantity},
+            success: function(data){
+                    alert(data);
+                }
+            });
     });
 
 $('.select1').change(function(){
@@ -929,6 +936,20 @@ $('.select255').change(function(){
             $(this).closest('div').find('.product-id').html('259');
         }else if(x == 'natural' && y == 'yareshka'){
             $(this).closest('div').find('.product-id').html('260');
+        }
+    });
+
+$('.select261').change(function(){
+        var y = $('#selectMaterial261').val();
+        var x = $('#selectColor261').val();
+        if(x == 'black' && y == 'teleshka'){
+            $(this).closest('div').find('.product-id').html('261');
+        }else if(x == 'natural' && y == 'teleshka'){
+            $(this).closest('div').find('.product-id').html('262');
+        }else if(x == 'black' &&  y== 'bivolska'){
+            $(this).closest('div').find('.product-id').html('263');
+        }else if(x == 'natural' && y == 'bivolska'){
+            $(this).closest('div').find('.product-id').html('264');
         }
     });
 

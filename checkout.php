@@ -15,7 +15,7 @@ include 'layout_head.php';
                 <textarea name="comment" placeholder="Допълнителна информация"></textarea>
                 <input type="submit" class="submit" value="Поръчай">
           </form>
-      </div>
 </div>
-</body>
-</html>
+<?php
+include "layout_foot.html";
+?>>

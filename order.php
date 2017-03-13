@@ -3,7 +3,7 @@ session_start();
 	/* ==========================  Define variables ========================== */
 
 	#Your e-mail address
-	define("__TO__", "aubgolympicscommittee@gmail.com");
+	define("TO", "aubgolympicscommittee@gmail.com");
 
 	/* ========================  End Define variables ======================== */
 
@@ -29,13 +29,13 @@ session_start();
 
 	//Get post data
 	if(isset($_POST['first']) and isset($_POST['family']) and isset($_POST['address']) and isset($_POST['city']) and isset($_POST['zip']) and isset($_POST['mail']) and isset($_POST['comment']) and isset($_POST['telephone'])){
-		$name 	 = $_POST['first'];
-		$family 	 = $_POST['family'];
-		$mail 	 = $_POST['mail'];
+		$name = $_POST['first'];
+		$family	= $_POST['family'];
+		$mail = $_POST['mail'];
 		$telephone = $_POST['telephone'];
 		$address = $_POST['address'];
-		$city 	 = $_POST['city'];
-		$zip 	 = $_POST['zip'];
+		$city = $_POST['city'];
+		$zip = $_POST['zip'];
 		$comment = $_POST['comment'];
 		
 
@@ -75,7 +75,7 @@ if(count($_SESSION['cart_items'])>0){
     // remove the last comma
     $ids = rtrim($ids, ',');
 			//Send Mail
-			$to = __TO__;
+			$to = TO;
 			$subject = 'Поръчка';
 			$message = '
 		<!DOCTYPE html>
@@ -150,6 +150,6 @@ $stmt->execute();
 	}
 }
 	else {
-		echo json_encode(array(__MESSAGE_EMPTY_FILDS__));
+		echo "There are empty fields";
 	}
  ?>

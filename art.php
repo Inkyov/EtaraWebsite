@@ -1,8 +1,6 @@
 <?php
 include 'layout_head.php';
-//unset ($_SESSION['cart_items']);
-//var_dump($_SESSION['cart_items']);
-        // select products from database
+
 $query = "SELECT productsonesize.ProductID, colormaterialcombination.colName AS Color, colormaterialcombination.matName AS Material, sizes.sizeName AS Size, names.Name AS Name, productsonesize.Price AS Price, productsonesize.Image AS Image, description.Description AS Description, productsonesize.Stock AS Stock
 FROM productsonesize
 LEFT JOIN sizes ON productsonesize.sizeID=sizes.sizeID
@@ -13,8 +11,7 @@ Where productID IN (1, 9, 11, 13)";
                 
 $stmt = $con->prepare( $query );
 $stmt->execute();
- 
-// count number of products returned
+
 $num = $stmt->rowCount();
  
 if($num>0){
@@ -195,7 +192,5 @@ echo "</div>";
 }
 $stmt = null;
 $con = null;
+include "layout_foot.html";
 ?>
-</div>
-</body>
-</html>

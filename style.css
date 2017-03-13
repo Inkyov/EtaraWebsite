@@ -1,3 +1,6 @@
+html{
+  height: 100%;
+}
 body {
   margin:0px;
   padding:0;
@@ -115,15 +118,43 @@ hr {
   background-color: #ffffff;
 }
 
+*{
+  margin:0;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto -4em; /* the bottom margin is the negative value of the footer's height */
+}
+
+.push{
+  clear:both;
+  height: 0;
+}
+
+.footer{
+  height: 4em; /* .push must be the same height as .footer */
+}
+
+.footer p{
+  line-height:4em;
+  text-align:center;
+  font-size:12pt;
+  background-color:#180D01;
+  color: #8C5F3F;
+}
+
 #centerColumn{ 	
   margin:0 auto;
   padding:1em 1em 0.5em 1em;
   width: 60%;
-  vertical-align: middle;	
-  background: transparent;
+  vertical-align: middle;
   clear: both;
   background: rgba(140, 95, 63, 0.7);
   font-size: 16pt;
+  min-height: 100%;
 }
 
 a, :visited, a:hover{
@@ -138,20 +169,16 @@ a, :visited, a:hover{
   text-align: center;
   width:90%; 
   margin:0 auto;
+  margin-bottom: 4em;
 }
 
 #footer{
-  position:relative;
-  clear:both;
-  bottom:0;
-  margin:5em 0 0 0;
-  padding:0;
-  height:4em;
+  bottom: 0;
   line-height:4em;
-  text-align:;
-  font-size:.7em;
-  background-color:transparent;
-  color: #A60D25;
+  text-align:center;
+  font-size:12pt;
+  background-color:#180D01;
+  color: #8C5F3F;
 }
 
 table{
@@ -341,6 +368,7 @@ ul.pagination{
   padding: 0;
   margin: 0;
   text-align: left !important;
+  margin-bottom: 4em;
 }
 
 ul.pagination li{
@@ -472,4 +500,5 @@ input[type='number']{
   width: 100%;
   border:5px solid #180D01;
   border-radius: 4px;
+  margin-bottom: 4em;
 }

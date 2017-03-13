@@ -7,7 +7,7 @@ LEFT JOIN sizes ON productsonesize.sizeID=sizes.sizeID
 LEFT JOIN colormaterialcombination ON productsonesize.colMatID=colormaterialcombination.colMatID
 LEFT JOIN names ON productsonesize.nameID=names.nameID
 LEFT JOIN description ON productsonesize.DescriptionID=description.descriptionID
-Where productID IN (220, 224, 228)";
+Where productID IN (220, 224, 228, 261)";
  
 $stmt = $con->prepare( $query );
 $stmt->execute();
@@ -290,7 +290,5 @@ echo "</div>";
         }
 
 }
+include "layout_foot.html";
 ?>
-</div>
-</body>
-</html>

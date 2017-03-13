@@ -1361,11 +1361,6 @@ $('#220').click(function(){
             src: 'Photos/LeatherHandiwork/Belts/Model1/DSC_4902.JPG',
             w: 1290,
             h: 860
-        },
-        {
-            src: 'Photos/LeatherHandiwork/Belts/Model1/DSC_4911.JPG',
-            w: 1290,
-            h: 860
         }
     ];
 
@@ -1392,11 +1387,6 @@ $('#224').click(function(){
             src: 'Photos/LeatherHandiwork/Belts/Model2/DSC_4905.JPG',
             w: 1290,
             h: 860
-        },
-        {
-            src: 'Photos/LeatherHandiwork/Belts/Model2/DSC_4915.JPG',
-            w: 1290,
-            h: 860
         }
     ];
 
@@ -1416,11 +1406,6 @@ $('#228').click(function(){
         },
         {
             src: 'Photos/LeatherHandiwork/Belts/Model3/DSC_4907.JPG',
-            w: 1290,
-            h: 860
-        },
-        {
-            src: 'Photos/LeatherHandiwork/Belts/Model3/DSC_4918.JPG',
             w: 1290,
             h: 860
         }
@@ -1582,5 +1567,31 @@ $('#255').click(function(){
     gallery.init();
     });
 
+
+$('#261').click(function(){
+    var pswpElement = document.querySelectorAll('.pswp')[0];
+
+    // build items array
+    var items = [
+        {
+            src: 'Photos/LeatherHandiwork/Belts/Model6/DSC_4911.JPG',
+            w: 1290,
+            h: 860
+        },
+        {
+            src: 'Photos/LeatherHandiwork/Belts/Model6/DSC_4915.JPG',
+            w: 1290,
+            h: 860
+        },
+        {
+            src: 'Photos/LeatherHandiwork/Belts/Model6/DSC_4918.JPG',
+            w: 1290,
+            h: 860
+        }
+    ];
+
+    var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items);
+    gallery.init();
+    });
 
  });
