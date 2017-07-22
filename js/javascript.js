@@ -1,9 +1,8 @@
 $(document).ready(function(){
-
-    $('.add-to-cart').click(function(){
-        var id = $(this).closest('div').find('.product-id').text();
-        var quantity = $(this).closest('div').find('input').val();
-        $.ajax({
+  $('.add-to-cart').click(function(){
+    var id = $(this).closest('div').find('.product-id').text();
+    var quantity = $(this).closest('div').find('input').val();
+    $.ajax({
             type: "POST",
             url: "add_to_cart.php",
             data: {id: id, quantity: quantity},
@@ -11,7 +10,7 @@ $(document).ready(function(){
                     alert(data);
                 }
             });
-    });
+  });
 
 $('.select1').change(function(){
         var singleValue = $('#selectColor1').val();
