@@ -15,7 +15,7 @@ session_start();
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/javascript.js"></script>
 <script src="js/zoomPictures.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" href="style.css" type="text/css"/>
 <link rel="stylesheet" href='PhotoSwipe-master/dist/photoswipe.css'/>
 <link rel="stylesheet" href='PhotoSwipe-master/dist/default-skin/default-skin.css'/>
 <link rel="stylesheet" href="http://bg.allfont.net/allfont.css?fonts=cyrillicold" type="text/css"/>
@@ -24,7 +24,7 @@ session_start();
 <script src='PhotoSwipe-master/dist/photoswipe.min.js'></script>
 <script src='PhotoSwipe-master/dist/photoswipe-ui-default.min.js'></script>
 <script src="basic-jquery-slider-master/js/bjqs-1.3.js"></script>
-<link type="text/css" rel="Stylesheet" href="basic-jquery-slider-master/bjqs.css" />
+<link rel="Stylesheet" href="basic-jquery-slider-master/bjqs.css" type="text/css" />
 </head>
 <body>
 <div class="wrapper">
@@ -37,10 +37,10 @@ session_start();
       <li><a>Каталог</a>
         <ul>
           <li>Аксесоари
-              <ul>
+            <ul>
               <li><a href="art.php">Сарашко изкуство</a></li>
               <li><a href="otherModels.php">Други модели</a></li>
-              </ul>
+            </ul>
           </li>
           <li>Сарашки изделия
             <ul>
@@ -50,7 +50,7 @@ session_start();
             </ul>
           </li>
           <li>Кожени изделия
-          <ul>
+            <ul>
               <li><a href="wallets.php">Портфейли</a></li>
               <li><a href="cases.php">Калъфи за очила</a></li>
               <li><a href="keyrings.php">Ключодържатели</a></li>
@@ -59,7 +59,7 @@ session_start();
               <li><a href="bags.php">Чанти</a></li>
             </ul>
           </li>
-      </ul>
+        </ul>
       </li>
       <li><a href="contact.php">Контакти</a></li>
       <li><a href="cart.php">Кошница</a></li>
